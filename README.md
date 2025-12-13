@@ -73,7 +73,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ### Prasyarat
 Pastikan komputer anda sudah terinstall:
-- Local Server (Laragon Recommended, surely php 8.2 included or another local server)
+- Local Server (Laragon Recommended, surely php 8.2 included or other local server)
 - PHP >= 8.2
 - Composer
 - Node.js & NPM
