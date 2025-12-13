@@ -64,3 +64,85 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+# Web Afthon
+
+## Installation
+
+### Prasyarat
+Pastikan komputer anda sudah terinstall:
+- PHP >= 8.2
+- Composer
+- Node.js & NPM
+- MySQL
+
+### 🛠️ Langkah Instalasi
+
+1. **Clone Repository**
+   Buka terminal dan jalankan perintah ini:
+   ```
+   git clone https://github.com/username-lu/web-afthon.git
+   cd web-afthon
+   ```
+
+2. **Install Dependency PHP (Composer)**
+   ```
+   composer install
+   ```
+
+3. **Install Dependency Frontend (NPM)**
+   ```
+   npm install
+   ```
+
+4. **Setup Environment (.env)**
+   Duplikat file konfigurasi dan generate key aplikasi:
+   ```
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+5. **Konfigurasi Database**
+   Buat database baru di MySQL (misal: `web_afthon`), lalu buka file `.env` dan atur koneksinya:
+   ```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=web_afthon
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+
+6. **Migrasi Database**
+   Membuat tabel di database:
+   ```
+   php artisan migrate
+   ```
+
+7. **Setup Storage Link (PENTING)**
+   Agar gambar yang diupload bisa muncul:
+   ```
+   php artisan storage:link
+   ```
+
+8. **Build Assets**
+   Compile CSS dan JS:
+   ```
+   npm run build
+   ```
+
+9. **Jalankan Server**
+   ```
+   php artisan serve
+   ```
+
+## Guide (Setup Admin)
+
+Gunakan URL khusus ini untuk membuat akun admin pertama kali:
+
+1. Pastikan server berjalan, lalu buka browser: **`http://127.0.0.1:8000/install-admin`**
+2. Isi form registrasi admin (Nama, Email, Password).
+3. Klik **Install & Masuk**.
+
