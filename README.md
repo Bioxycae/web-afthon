@@ -84,7 +84,7 @@ Pastikan komputer anda sudah terinstall:
 1. **Clone Repository**
    Buka terminal dan jalankan perintah ini:
    ```
-   git clone https://github.com/username-lu/web-afthon.git
+   git clone https://github.com/BIoxycae/web-afthon.git
    cd web-afthon
    ```
 
