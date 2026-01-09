@@ -72,12 +72,12 @@
                                                         </svg>
                                                     </div>
                                                 </a>
-                                               @else
-                                                    <div class="flex items-center justify-center w-24 h-16 overflow-hidden border border-gray-200 rounded-lg shadow-sm cursor-default bg-gray-50" title="Tidak ada gambar">
-                                                        {{-- Placeholder --}}
-                                                        <img src="https://placehold.co/600x400/f1f5f9/cbd5e1?text=No+Img" class="object-cover w-full h-full opacity-70">
-                                                    </div>
-                                                @endif
+                                            @else
+                                                <div class="flex items-center justify-center w-24 h-16 overflow-hidden border border-gray-200 rounded-lg shadow-sm cursor-default bg-gray-50" title="Tidak ada gambar">
+                                                    {{-- Placeholder --}}
+                                                    <img src="https://placehold.co/600x400/f1f5f9/cbd5e1?text=No+Img" class="object-cover w-full h-full opacity-70">
+                                                </div>
+                                            @endif
                                         </td>
                                         <td class="px-6 py-4 align-middle">
                                             <div class="text-sm font-bold text-gray-900 line-clamp-2">{{ $post->title }}</div>
